@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Create the Zoho Config model reference -->
+    <record id="model_zoho_config" model="ir.model">
+        <field name="name">Zoho Config</field>
+        <field name="model">zoho.config</field>
+    </record>
+
+    <!-- Define the cron job for syncing Zoho Config -->
+    <record id="ir_cron_zoho_config_sync" model="ir.cron">
+        <field name="name">Zoho Config Sync</field>
+        <field name="model_id" ref="model_zoho_config"/>
+        <field name="state">code</field>
+        <field name="code">model.sync_zoho_config()</field>
+        <field name="interval_number">24</field>
+        <field name="interval_type">hours</field>
+        <field name="active" eval="True"/>
+    </record>
+</odoo>
+

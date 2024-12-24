@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_zoho_config,access.zoho.config,model_zoho_config,base.group_user,1,1,1,1
+access_sync_product_wizard,access.sync.product.wizard,model_sync_product_wizard,base.group_user,1,1,1,1

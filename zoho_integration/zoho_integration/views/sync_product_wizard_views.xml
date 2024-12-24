@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_sync_product_wizard_form" model="ir.ui.view">
+        <field name="name">sync.product.wizard.form</field>
+        <field name="model">sync.product.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Sync Products" create="false" edit="false" options="{'mode': 'readonly'}" buttons="[]">
+                <group>
+                    <field name="message" readonly="1"/>
+                    <field name="details" readonly="1"/>
+                </group>
+                <footer>
+                    <!-- Close button to close the wizard -->
+                    <button string="Close" class="btn-primary" type="object" name="action_close_popup" />
+                </footer>
+            </form>
+        </field>
+    </record>
+</odoo>
