@@ -1,0 +1,13 @@
+<!-- <?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="place_order_button_checkout" name="Place Order Button on Checkout" inherit_id="website_sale.payment">
+        <xpath expr="//div[contains(@class, 'oe_structure')]" position="inside">
+            <form method="POST" action="/shop/orderconfirmed">
+                <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                <a href="javascript:void(0);" class="btn btn-primary btn-place-order">Place Order</a>
+            </form>
+            <script src="/web/static/lib/jquery/jquery.js"></script>
+            <script src="/my_order_module/static/src/js/order_confirmation.js"></script>
+        </xpath>
+    </template>
+</odoo> -->
